@@ -1,0 +1,33 @@
+<div class="content">  
+    <div class="chat bloc">
+        <div id="box">
+    
+            <?php foreach ($findM as $findAll) : ?>
+                
+                <?= $findAll->getUser(); ?> :
+                <?= $findAll->getTextMessages(); ?> le 
+                <?= $findAll->getDateMessages()->format("d/m/Y à H:i:s"); ?><br>
+        
+            <?php endforeach; ?>
+                
+        </div>
+    </div>  
+    <div class = "connected bloc">
+        
+        <h3>Utilisateurs connectés</h3>
+
+        <div id="utilisateur">
+            
+            <?php foreach ($findU as $findAll) : ?>
+                <?= $findAll->getLoginUsers(); ?><br>
+            <?php endforeach; ?>
+                
+        </div>
+    </div> 
+    
+    <?php include "Controllers/formChat.php"; ?>
+    
+    <?php echo $_SESSION["pseudo"]; ?>
+    
+</div>
+    
