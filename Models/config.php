@@ -13,9 +13,9 @@ define("APP_VERSION", "0.1");
 
 // DATABASE
 define("DB_DRIVER", "mysql");
-define("DB_HOST", "localhost");
-define("DB_USERNAME", "root");
-define("DB_PASSWORD", "root");
-define("DB_NAME", "chat");
+define("DB_HOST", "");
+define("DB_USERNAME", "");
+define("DB_PASSWORD", "");
+define("DB_NAME", "");
 define("ENCODING", "utf-8");
 define("DB_PORT", "3306");
